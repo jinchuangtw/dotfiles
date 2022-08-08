@@ -20,6 +20,7 @@ Please install these fonts in advance.
 * [fisher](https://github.com/jorgebucaran/fisher)
 * [tide](https://github.com/IlanCosman/tide)
 * [z](https://github.com/jethrokuan/z)
+* [dracula theme](https://github.com/dracula/fish)
 
 ## tmux
 For `Linux` and `WSL`, you don't need to download `tmux.conf.osx`.
