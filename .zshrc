@@ -12,6 +12,9 @@ fi
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 # Path to your oh-my-zsh installation.
 export ZSH="/home/jinchuangtw/.oh-my-zsh"
 
@@ -58,8 +61,6 @@ alias v="nvim"
 
 # ------------------------ USER CONFIG STOPS HERE ---------------------------
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # ----------------------- SYNTAX COLOR SETTINGS -----------------------------
 # Dracula Theme (for zsh-syntax-highlighting)
