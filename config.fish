@@ -5,16 +5,14 @@ end
 fish_config theme choose "Dracula Official"
 
 # pyenv init
-# if command -v pyenv 1>/dev/null 2>&1
-#   pyenv init --path | source
-# end
-
-# activate cool icons
-source ~/.local/share/icons-in-terminal/icons.fish
+export PYENV_ROOT="$HOME/.pyenv"
+if command -v pyenv 1>/dev/null 2>&1
+  pyenv init --path | source
+end
 
 # ros settings
-bass source /opt/ros/noetic/setup.bash
-bass source ~/Development/catkin_ws/devel/setup.bash
+# bass source /opt/ros/noetic/setup.bash
+# bass source ~/Development/catkin_ws/devel/setup.bash
 
 # alias settings
 alias ls='logo-ls'

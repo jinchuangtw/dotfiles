@@ -37,10 +37,14 @@ path=(
     /usr/local/cuda-11.3/bin
     /usr/local/MATLAB/R2022a/bin
     /usr/local/.cargo/bin
-    /usr/local/.pyenv/bin
     /usr/local/Telegram
     /opt/ros/noetic/bin
 )
+
+# pyenv settings
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 # source settings
 source /opt/ros/noetic/setup.zsh
