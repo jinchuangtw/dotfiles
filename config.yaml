@@ -1,0 +1,7 @@
+CompileFlags:
+  Add:
+    - "--include-directory=/usr/local/include"
+    - "--include-directory=/usr/include"
+    - "--include-directory=/usr/include/eigen3"
+    - "--include-directory=/opt/ros/noetic/include"
+    - "--include-directory=/usr/local/include/pcl-1.11"
