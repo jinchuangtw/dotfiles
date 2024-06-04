@@ -1,6 +1,6 @@
 # dotfiles
 My dotfiles for zsh shell, fish shell, and tmux.
-> For `nvim` setup, please see [jinchuangtw/nvim](https://github.com/jinchuangtw/nvim)
+> For `nvim` setup, please see [jinchuangtw/Jvim](https://github.com/jinchuangtw/Jvim)
 
 ## Terminal pre-setup
 Please install these fonts in advance.
@@ -27,3 +27,8 @@ For `Linux` and `WSL`, you don't need to download `tmux.conf.osx`.
 
 ## .dir_colors
 For `WSL` only. It could fix the colors in terminal for dracula theme.
+
+
+## Editor(NeoVIM) cpp config
+* `.clang-format` is a config file for cpp formatter. Put it in the home directory.
+* `config.yaml` is a config file for cpp include files. Put it in `~/.config/clangd`.
