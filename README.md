@@ -17,11 +17,13 @@ Please install these fonts in advance.
 * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
 ## fish
-Current using fish `3.7.1`
+Current using fish `3.7.1`.
 * [fisher](https://github.com/jorgebucaran/fisher)
-* [tide](https://github.com/IlanCosman/tide)
+* [tide](https://github.com/IlanCosman/tide)@`v6`
 * [z](https://github.com/jethrokuan/z)
 * [dracula theme](https://github.com/dracula/fish)
+* [bass](https://github.com/edc/bass)
+* [nvm.fish](https://github.com/jorgebucaran/nvm.fish)
 
 ## tmux
 For `Linux` and `WSL`, you don't need to download `tmux.conf.osx`.
