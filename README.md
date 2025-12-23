@@ -17,6 +17,7 @@ Please install these fonts in advance.
 * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
 ## fish
+Current using fish `3.7.1`
 * [fisher](https://github.com/jorgebucaran/fisher)
 * [tide](https://github.com/IlanCosman/tide)
 * [z](https://github.com/jethrokuan/z)
@@ -27,7 +28,6 @@ For `Linux` and `WSL`, you don't need to download `tmux.conf.osx`.
 
 ## .dir_colors
 For `WSL` only. It could fix the colors in terminal for dracula theme.
-
 
 ## Editor(NeoVIM) cpp config
 * `.clang-format` is a config file for cpp formatter. Put it in the home directory.
