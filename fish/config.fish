@@ -27,7 +27,7 @@ alias cm='mkdir build && cd build && cmake ..'
 alias recm='cd .. && rm -rf build && mkdir build && cd build && cmake ..'
 
 alias iec='sudo tailscale up --exit-node="iec-nas.taild6cb20.ts.net"'
-alias iecc='sudo tailscale down'
+alias iecc='sudo tailscale set --exit-node='
 
 # ------------------------------------------------------------
 # ros settings
