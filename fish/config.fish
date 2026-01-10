@@ -32,7 +32,6 @@ alias iecc='sudo tailscale set --exit-node='
 # ------------------------------------------------------------
 # ros settings
 source /opt/ros/noetic/share/rosbash/rosfish
-bass source ~/Development/catkin_ws/devel/setup.bash
 
 # ------------------------------------------------------------
 # pyenv init
