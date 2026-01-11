@@ -78,6 +78,19 @@ sudo apt install -y wl-clipboard xclip || true
 # libfuse2 helps some AppImages; harmless even if we use tarball Neovim
 sudo apt install -y libfuse2 || sudo apt install -y libfuse2t64 || true
 
+log "Installing logo-ls (pretty ls with logos + Nerd Fonts)…"
+if ! command -v logo-ls >/dev/null 2>&1; then
+  # Prefer GitHub binary for latest version
+  tmp_tar="$(mktemp -t logo-ls.XXXXXX.tar.gz)"
+  curl -L "https://github.com/Yash-Handa/logo-ls/releases/latest/download/logo-ls-x86_64-unknown-linux-gnu.tar.gz" -o "$tmp_tar"
+  tar -xzf "$tmp_tar" -C "$LOCAL_BIN" logo-ls
+  chmod +x "$LOCAL_BIN/logo-ls"
+  rm -f "$tmp_tar"
+  log "logo-ls installed at $LOCAL_BIN/logo-ls"
+else
+  log "logo-ls already installed."
+fi
+
 log "Installing fish v4 from PPA (fish-shell/release-4)…"
 if command -v fish >/dev/null 2>&1; then
   FISH_VER="$(fish --version | awk '{print $3}' || true)"
