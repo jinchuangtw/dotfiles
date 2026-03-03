@@ -26,6 +26,8 @@ alias v='nvim'
 alias cm='mkdir build && cd build && cmake ..'
 alias recm='cd .. && rm -rf build && mkdir build && cd build && cmake ..'
 
+alias cdcat='cd ~/Development/catkin_ws'
+
 alias iec='sudo tailscale up --exit-node="iec-nas.taild6cb20.ts.net"'
 alias iecc='sudo tailscale set --exit-node='
 
