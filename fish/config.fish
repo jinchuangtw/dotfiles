@@ -36,7 +36,7 @@ alias iecc='sudo tailscale set --exit-node='
 # ------------------------------------------------------------
 # ros settings
 source /opt/ros/noetic/share/rosbash/rosfish
-# bass source ~/Development/catkin_ws/devel/setup.bash
+# bass source /opt/ros/noetic/setup.bash
 
 # ------------------------------------------------------------
 # pyenv init
@@ -51,18 +51,18 @@ end
 # ------------------------------------------------------------
 # conda init
 # !! Contents within this block are managed by 'conda init' !!
-if test -f /home/jinchuangtw/miniconda3/bin/conda
-    eval /home/jinchuangtw/miniconda3/bin/conda "shell.fish" "hook" $argv | source
-else
-    if test -f "/home/jinchuangtw/miniconda3/etc/fish/conf.d/conda.fish"
-        source "/home/jinchuangtw/miniconda3/etc/fish/conf.d/conda.fish"
-    else
-        set -x PATH "/home/jinchuangtw/miniconda3/bin" $PATH
-    end
-end
-
-if test -d /home/jinchuangtw/miniconda3/bin
-    fish_add_path -m /home/jinchuangtw/miniconda3/bin
-end
+# if test -f /home/jinchuangtw/miniconda3/bin/conda
+#     eval /home/jinchuangtw/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+# else
+#     if test -f "/home/jinchuangtw/miniconda3/etc/fish/conf.d/conda.fish"
+#         source "/home/jinchuangtw/miniconda3/etc/fish/conf.d/conda.fish"
+#     else
+#         set -x PATH "/home/jinchuangtw/miniconda3/bin" $PATH
+#     end
+# end
+# 
+# if test -d /home/jinchuangtw/miniconda3/bin
+#     fish_add_path -m /home/jinchuangtw/miniconda3/bin
+# end
 
 # -----------------------------------------------------------
