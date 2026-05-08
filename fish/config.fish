@@ -25,6 +25,8 @@ alias v='nvim'
 
 alias cm='mkdir build && cd build && cmake ..'
 alias recm='cd .. && rm -rf build && mkdir build && cd build && cmake ..'
+alias omyd-ros='~/Development/catkin_ws_docker/scripts/dev.sh'
+alias bmyd-ros='~/Development/catkin_ws_docker/scripts/build_ws.sh'
 
 alias cdcat='cd ~/Development/catkin_ws'
 
@@ -34,6 +36,7 @@ alias iecc='sudo tailscale set --exit-node='
 # ------------------------------------------------------------
 # ros settings
 source /opt/ros/noetic/share/rosbash/rosfish
+# bass source ~/Development/catkin_ws/devel/setup.bash
 
 # ------------------------------------------------------------
 # pyenv init
