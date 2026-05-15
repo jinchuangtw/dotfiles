@@ -35,8 +35,13 @@ alias iecc='sudo tailscale set --exit-node='
 
 # ------------------------------------------------------------
 # ros settings
-source /opt/ros/noetic/share/rosbash/rosfish
-# bass source /opt/ros/noetic/setup.bash
+source ~/.config/fish/ros/rosfish_noetic_patched
+bass source /opt/ros/noetic/setup.bash
+
+# Allow normal file path completion for rosrun arguments after package + executable.
+complete -c rosrun \
+  -n 'test (count (commandline -opc)) -ge 4' \
+  -F
 
 # ------------------------------------------------------------
 # pyenv init
