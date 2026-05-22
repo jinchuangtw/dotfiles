@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     vim \
     nano \
     gdb \
+    tmux \
     python3-pip \
     python3-catkin-tools \
     python3-rosdep \
@@ -62,6 +63,13 @@ WORKDIR /home/${USERNAME}/catkin_ws
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
+
+COPY bashrc_container /home/${USERNAME}/.bashrc
+RUN chown ${USERNAME}:${USERNAME} /home/${USERNAME}/.bashrc
+
+COPY tmux.conf /home/${USERNAME}/.tmux.conf
+COPY tmux.statusline.conf /home/${USERNAME}/.tmux.statusline.conf
+RUN chown ${USERNAME}:${USERNAME} /home/${USERNAME}/.tmux.conf /home/${USERNAME}/.tmux.statusline.conf
 
 USER ${USERNAME}
 
