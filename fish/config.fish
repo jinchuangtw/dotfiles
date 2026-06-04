@@ -21,7 +21,7 @@ set -gx RESEARCH_HOME ~/Research
 set -gx RESEARCH_CODE $RESEARCH_HOME/01_code
 
 # Large shared data on SSD
-set -gx RESEARCH_DATA /media/jinchuangtw/新增磁碟區/Research_Database
+set -gx RESEARCH_DATA /mnt/dual_os_disk/Research_Database
 set -gx DATASET_DIR $RESEARCH_DATA/01_datasets_original
 set -gx DATASET_CUT_DIR $RESEARCH_DATA/02_datasets_derived
 set -gx EXP_OUTPUT_DIR $RESEARCH_DATA/03_experiment_outputs
@@ -47,8 +47,13 @@ alias cdcat='cd ~/Development/catkin_ws'
 alias iec='sudo tailscale up --exit-node="iec-nas.taild6cb20.ts.net"'
 alias iecc='sudo tailscale set --exit-node='
 
-alias backup_research='$HOME/Research/98_tools_and_templates/backup_scripts/backup_research_to_t7.fish'
-alias backup_research_dry='$HOME/Research/98_tools_and_templates/backup_scripts/backup_research_to_t7.fish --dry-run'
+# Research T7 backup
+alias tsevendry='$HOME/Research/98_tools_and_templates/backup_scripts/backup_research_to_t7.fish --dry-run'
+alias tsevensync='$HOME/Research/98_tools_and_templates/backup_scripts/backup_research_to_t7.fish'
+
+# Research Google Drive backup
+alias gdry='$HOME/Research/98_tools_and_templates/backup_scripts/gdrive_backup_dryrun.fish'
+alias gsync='$HOME/Research/98_tools_and_templates/backup_scripts/gdrive_backup_sync.fish'
 
 # ------------------------------------------------------------
 # ros settings
