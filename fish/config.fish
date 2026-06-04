@@ -47,6 +47,9 @@ alias cdcat='cd ~/Development/catkin_ws'
 alias iec='sudo tailscale up --exit-node="iec-nas.taild6cb20.ts.net"'
 alias iecc='sudo tailscale set --exit-node='
 
+alias backup_research='$HOME/Research/98_tools_and_templates/backup_scripts/backup_research_to_t7.fish'
+alias backup_research_dry='$HOME/Research/98_tools_and_templates/backup_scripts/backup_research_to_t7.fish --dry-run'
+
 # ------------------------------------------------------------
 # ros settings
 source ~/.config/fish/ros/rosfish_noetic_patched
