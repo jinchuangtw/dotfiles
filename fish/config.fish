@@ -14,6 +14,19 @@ fish_add_path -g /usr/local/texlive/2024/bin/x86_64-linux
 fish_add_path -g /usr/local/Telegram
 
 # ------------------------------------------------------------
+# Common PATH variables
+# Research workspace
+set -gx CATKIN_WS ~/Development/catkin_ws
+set -gx RESEARCH_HOME ~/Research
+set -gx RESEARCH_CODE $RESEARCH_HOME/01_code
+
+# Large shared data on SSD
+set -gx RESEARCH_DATA /media/jinchuangtw/新增磁碟區/Research_Database
+set -gx DATASET_DIR $RESEARCH_DATA/01_datasets_original
+set -gx DATASET_CUT_DIR $RESEARCH_DATA/02_datasets_derived
+set -gx EXP_OUTPUT_DIR $RESEARCH_DATA/03_experiment_outputs
+
+# ------------------------------------------------------------
 # alias settings
 alias ls='logo-ls'
 alias la='logo-ls -A'
@@ -23,6 +36,7 @@ alias vim='nvim'
 alias vi='nvim'
 alias v='nvim'
 
+alias ai-dev='kitty --session ~/.config/kitty/sessions/ai-dev.conf'
 alias cm='mkdir build && cd build && cmake ..'
 alias recm='cd .. && rm -rf build && mkdir build && cd build && cmake ..'
 alias omyd-ros='~/Development/catkin_ws_docker/scripts/dev.sh'
@@ -56,18 +70,18 @@ end
 # ------------------------------------------------------------
 # conda init
 # !! Contents within this block are managed by 'conda init' !!
-# if test -f /home/jinchuangtw/miniconda3/bin/conda
-#     eval /home/jinchuangtw/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+# if test -f $HOME/miniconda3/bin/conda
+#     eval $HOME/miniconda3/bin/conda "shell.fish" "hook" $argv | source
 # else
-#     if test -f "/home/jinchuangtw/miniconda3/etc/fish/conf.d/conda.fish"
-#         source "/home/jinchuangtw/miniconda3/etc/fish/conf.d/conda.fish"
+#     if test -f "$HOME/miniconda3/etc/fish/conf.d/conda.fish"
+#         source "$HOME/miniconda3/etc/fish/conf.d/conda.fish"
 #     else
-#         set -x PATH "/home/jinchuangtw/miniconda3/bin" $PATH
+#         set -x PATH "$HOME/miniconda3/bin" $PATH
 #     end
 # end
 # 
-# if test -d /home/jinchuangtw/miniconda3/bin
-#     fish_add_path -m /home/jinchuangtw/miniconda3/bin
+# if test -d $HOME/miniconda3/bin
+#     fish_add_path -m $HOME/miniconda3/bin
 # end
 
 # -----------------------------------------------------------
