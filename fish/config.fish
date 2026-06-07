@@ -55,6 +55,12 @@ alias tsevensync='$HOME/Research/98_tools_and_templates/backup_scripts/backup_re
 alias gdry='$HOME/Research/98_tools_and_templates/backup_scripts/gdrive_backup_dryrun.fish'
 alias gsync='$HOME/Research/98_tools_and_templates/backup_scripts/gdrive_backup_sync.fish'
 
+# Alias for pyboard development
+alias pyb-repl='~/.local/bin/mpremote connect /dev/ttyACM0 repl'
+alias pyb-reset='~/.local/bin/mpremote connect /dev/ttyACM0 reset'
+alias pyb-put='~/.local/bin/mpremote connect /dev/ttyACM0 fs cp main.py :main.py'
+alias pyb-run='~/.local/bin/mpremote connect /dev/ttyACM0 fs cp main.py :main.py; and ~/.local/bin/mpremote connect /dev/ttyACM0 reset'
+
 # ------------------------------------------------------------
 # ros settings
 source ~/.config/fish/ros/rosfish_noetic_patched
